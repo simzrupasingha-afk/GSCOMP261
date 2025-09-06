@@ -1,17 +1,17 @@
 version: "3.8"
 
 services:
-  frontend:
-    build: ./frontend
+  frontend2:
+    build: ./frontend2
     ports:
       - "3000:3000"
     depends_on:
-      - backend
+      - backend2
     networks:
       - app-network
 
-  backend:
-    build: ./backend
+  backend2:
+    build: ./backend2
     ports:
       - "3001:3001"
     environment:
